@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Component } from "react";
+import React from "react";
 import API from "../../utils/API";
 import { MDBDataTableV5 } from 'mdbreact';
 
@@ -15,10 +15,15 @@ const columns= [
 
 
 
+export default function mainSearch(){
 
 
-function MainSearchPage() {
-    return <div>Hello World</div>
+    return <MDBDataTableV5 hover entriesOptions={[5, 20, 25]} entries={5} pagesAmount={4} data={datatable} />;
 }
 
-export default MainSearchPage
+
+// function MainSearchPage() {
+//     return <div>Hello World</div>
+// }
+
+// export default MainSearchPage
