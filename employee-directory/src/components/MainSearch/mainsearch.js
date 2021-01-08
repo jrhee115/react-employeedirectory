@@ -7,13 +7,28 @@ const columns= [
         label: "Image",
         field: "image",
         width: 150,
-    }
+    },
+    {
+        label: "Name",
+        field: "name",
+        width: 200,
+    },
+    {
+        label: "Phone",
+        field: "phone",
+        width: 100,
+    },
+    {
+        label: "Email",
+        field: "email",
+        width: 200,
+    },
+    {
+        label: "DOB",
+        field: "dob",
+        width: 100,
+    },
 ]
-
-
-
-
-
 
 export default function mainSearch(){
 
