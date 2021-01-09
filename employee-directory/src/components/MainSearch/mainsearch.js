@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import API from "../../utils/API";
 import { MDBDataTableV5 } from 'mdbreact';
 
@@ -31,6 +31,16 @@ const columns= [
 ]
 
 export default function mainSearch(){
+    const [users, setUsers] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [datatable, setDatatable] = useState({})
+
+    useEffect(() =>{
+        API.populate()
+        .then(res => {
+            
+        })
+    })
 
 
     return <MDBDataTableV5 hover entriesOptions={[5, 20, 25]} entries={5} pagesAmount={4} data={datatable} />;
