@@ -38,9 +38,23 @@ export default function mainSearch(){
     useEffect(() =>{
         API.populate()
         .then(res => {
+            console.log("res: ", res.data.results);
+            setUsers(res.data.results);
+            console.log("Users: ", users);
+            const rows = users.map((user, i ) => {
+                return {
+                    image: <img src={user.picture.medium} alt="employee image"/>,
+                    name: user.name.first + " " + user.name.last,
+                    phone: user.cell,
+                    email: user.email,
+                    dob: user.dob.date.split("T")[0]
+                }
+            })
+
             
         })
     })
+
 
 
     return <MDBDataTableV5 hover entriesOptions={[5, 20, 25]} entries={5} pagesAmount={4} data={datatable} />;
