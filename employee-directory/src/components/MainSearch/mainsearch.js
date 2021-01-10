@@ -33,7 +33,6 @@ export default function mainSearch() {
         ]
     })
 
-
     useEffect(() => {
         API.getUsers()
             .then(res => {

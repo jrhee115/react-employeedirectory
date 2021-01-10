@@ -1,6 +1,6 @@
 import React from "react"
-import Container from "./components/Container/container"
-import Wrapper from "./components/Wrapper/wrapper"
+import Container from "./components/container/container"
+import Wrapper from "./components/wrapper/wrapper"
 import MainSearch from "./components/MainSearch/mainsearch"
 
 function App(){
