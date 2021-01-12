@@ -54,7 +54,7 @@ export default function MainSearch() {
                 setLoading(false)
             })
             .catch(err => console.log(err))
-    }, [loading])
+    }, [users.loading])
 
     if (loading) {
         return <div>Please wait</div>

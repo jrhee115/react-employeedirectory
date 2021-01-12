@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Unit 19 React Homework: Employee Directory
 
 ## Overview
@@ -53,3 +54,6 @@ You are required to submit the following:
 
 * the URL to the Github repository
 
+=======
+# react-employeedirectory
+>>>>>>> 8198cefe63d99a6a77160b759e07238a389a1ab5
